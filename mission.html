@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolveForHer Mission</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mission-style.css">
+</head>
+<body>
+   <nav class="top-nav">
+    <div class="nav-logo-container">
+      <img src="logo.png" alt="gender-equality-logo" id="logo">
+    </div>
+    <div class="nav-content-container">
+      <ul>
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+    <button id="toggle-container">
+      <div class="cross cross-1 hamburger"></div>
+      <div class="cross-none hamburger"></div>
+      <div class="cross cross-2 hamburger"></div>
+    </button>
+  </nav>
+
+  <!--side nav section-->
+  <section id="side-nav-section">
+    <div id="nav-close-overlay" onclick="navClose()">
+    </div>
+      <nav id="side-nav">
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="navClose()">
+            <div class="close-cross cross-3"></div>
+            <div class="close-cross cross-4"></div>
+          </button>
+        </div>
+        <div class="side-nav-container">
+          <div>
+           <ul class="nav-list">
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+          </ul>
+           </div>
+         <div>
+          <img src="logo.png" alt="SolveForHer logo" onclick="navClose()">
+        </div>
+      </nav>
+  </section> 
+
+  <header class="mission-header">
+    <div>
+      <h1>Our</h1>
+      <h1>Mission</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="mission-container">
+      <div>
+        <h2>In Girls' Lives:</h2>
+        <article>We are committed to empowering girls by promoting equal opportunities, raising awareness of their rights, and encouraging a future where every girl can live with confidence, safety, and dignity.</article>
+      </div>
+      <div>
+        <h2>For Boys:</h2>
+        <article>We encourage boys to become allies by promoting respect, empathy, and responsibility, inspiring them to stand against discrimination and support gender equality in everyday life.</article>
+      </div>
+      <div>
+        <h2>Standing for Equality:</h2>
+        <article>We work to build a society where equality is a shared responsibility, bringing people together to challenge stereotypes, promote fairness, and create opportunities for everyone, regardless of gender.</article>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="main.js" defer></script>
+</html>

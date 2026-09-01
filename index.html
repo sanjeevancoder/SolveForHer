@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SolveForHer is a campaign to end gender inequality in the world and empower women and girls, showing that women and girls are equal to boys.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <title>SolveForHer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--nav section (top on the website)-->
+  <nav class="top-nav">
+    <div class="nav-logo-container">
+      <img src="/logo.png" alt="gender-equality-logo" id="logo">
+    </div>
+    <div class="nav-content-container">
+      <ul>
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+    <button id="toggle-container">
+      <div class="cross cross-1 hamburger"></div>
+      <div class="cross-none hamburger"></div>
+      <div class="cross cross-2 hamburger"></div>
+    </button>
+  </nav>
+
+  <!--side nav section-->
+  <section id="side-nav-section">
+    <div id="nav-close-overlay" onclick="navClose()">
+    </div>
+      <nav id="side-nav">
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="navClose()">
+            <div class="close-cross cross-3"></div>
+            <div class="close-cross cross-4"></div>
+          </button>
+        </div>
+        <div class="side-nav-container">
+          <div>
+           <ul class="nav-list">
+            <li onclick="navClose()"><a href="index.html">Home</a></li>
+            <li onclick="navClose()"><a href="about.html">About</a></li>
+            <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+            <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+          </ul>
+           </div>
+         <div>
+          <img src="logo.png" alt="SolveForHer logo" onclick="navClose()">
+        </div>
+      </nav>
+  </section>
+
+  <!--header section-->
+  <header id="main-header">
+    <div class="header-quote-container">
+      <div class="header-quote-wrap">
+        <h2>Time's up for harassment against women</h2>
+        <h2>It is time for gender equality</h2>
+      </div>
+    </div>
+  </header>
+
+  <!--main section-->
+  <section id="survey">
+    <div>
+        <img src="sad-woman-icon.svg" alt="women-sad-face">
+      <h2>1 in 3</h2>
+      <p>Women experienced physical and/or sexual violence worldwide</p>
+    </div>
+      <div>
+        <img src="women-empowerment.svg" alt="women-sad-face">
+      <h2>710 million</h2>
+      <p>Women are kept out of labor market because of their family care duties</p>
+    </div>
+      <div>
+        <img src="women-in-work.svg" alt="women-sad-face">
+      <h2>1 in 5</h2>
+      <p>Women aged 20-25 were married as children</p>
+    </div> 
+  </section>
+  <hr>
+
+  <div id="gender-inequality-sustainablity-reason-container">
+    <img src="image2.jpg" alt="girl-sad-face" id="sad-face">
+    <h2>Many girls still fear expressing their feelings because of what others think. They often cannot speak up when someone harasses them because they fear society's judgment. These fears can prevent women from reaching their full potential.</h2>
+  </div>
+  
+  <section id="main-cause-section">
+    <div>
+        <img src="Gender-Equality-Icon.svg" alt="" class="gender-logo">
+      <p>
+        Culture plays a major role in gender inequality.
+      </p>
+    </div>
+    <div>
+        <img src="Gender-Equality-Icon.svg" alt="" class="gender-logo">
+      <p>
+        Our beliefs are one of the factors that foster gender inequality.
+      </p>
+    </div>
+    <div>
+        <img src="Gender-Equality-Icon.svg" alt="" class="gender-logo">
+      <p>
+        Creating the idea that boys and girls are different in a child's mind is where gender inequality starts.
+      </p>
+    </div>
+  </section>
+  <script src="main.js" defer></script>
+</body>
+</html>

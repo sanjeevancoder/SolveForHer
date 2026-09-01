@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root{
+  --body-background: blue;
+  --fact-box-color: rgb(136, 162, 202);
+  --cause-box-shadow: #bcecff;
+  --top-nav-color: #A084CA;
+  --ROSE-PINK: #F2B8D1;
+}
+
+body{
+  background: radial-gradient(white, rgb(224, 224, 255));
+  width: 100%; 
+  height: 100%;
+}
+/*Nav contents style*/
+.top-nav{
+  background-color: var(--top-nav-color);
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  list-style: none;
+  padding: 10px;
+}
+nav ul li a{
+  padding: 4px;
+}
+.nav-content-container ul{
+  text-align: center;
+  display: flex;
+  gap: 40px; 
+}
+.nav-content-container ul li{
+  color: white;
+}
+nav ul li a:hover{
+  transition: 400ms;
+  background-color: black;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.nav-content-container ul li a{
+  color: white;
+  text-decoration: none;
+}
+.side-nav-container ul li a{
+  color: black;
+  text-decoration: none;
+}
+#logo{
+  padding-top: 18px;
+  width: 150px;
+  height: 120px;
+}
+#toggle-container{
+  cursor: pointer;
+  width: 20px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger{
+  top: 40%;
+  left: 0;
+  transition: 400ms;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black;
+}
+#hamburger-1{
+  position: absolute;
+  rotate: 45deg;
+}
+#hamburger-2{
+  opacity: 0;
+  transition: 400ms;
+
+}
+#hamburger-3{
+  position: absolute;
+  rotate: -45deg;
+}
+#side-nav-section{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 400ms;
+  pointer-events: none;
+}
+#nav-close-overlay{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+#side-nav{
+  position: absolute;
+  top: -0%;
+  left: -100%;
+  z-index: 6;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  transition: 400ms;
+}
+.close-btn-container{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-left: 10px;
+}
+.close-btn{
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.close-cross{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background-color: black;
+  width: 20px;
+  height: 3px;
+}
+.cross-3{
+  rotate: 45deg;
+}
+.cross-4{
+  rotate: -45deg;
+}
+.side-nav-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  list-style: none;
+  text-align: center;
+}
+.side-nav-container div img{
+  width: 250px;
+  height: 200px;
+}
+/*Nav styles end here*/
+
+#main-header{
+  width: 100%;
+  height: 500px;
+  background-image: url(image1.png);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.header-quote-container{
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.450);
+  z-index: 1;
+}
+.header-quote-wrap{
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  left: 5%;
+  font-size: 2.3vmax;
+}
+.header-quote-wrap h2{
+  color: white;
+  font-family: "Edu Au VIC WA NT Pre";
+  font-weight: 200;
+}
+#survey{
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+#survey div{
+  padding: 15px;
+  width: 250px;
+  height: 250px;
+  border: 2px rgb(59, 59, 59) solid;
+  border-radius: 50%;
+  background: radial-gradient(white, var(--fact-box-color));
+  box-shadow: 3px 3px 4px 2px rgb(0, 0, 119);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  row-gap: 4px;
+  align-items: center;
+  transition: 250ms;
+}
+#survey div:hover{
+  transform: scale(1.1);
+}
+#survey div img{
+  width: 30px;
+  height: 30px;
+}
+#survey div h2{
+  color: rgb(47, 0, 255);
+}
+#gender-inequality-sustainablity-reason-container{
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 65px;
+}
+#sad-face{
+  width: auto;
+  height: 250px;
+  border: 2px black solid;
+  box-shadow: 0px 0px 4px 1px;
+  border-radius: 20px 0px 20px 0px;
+}
+#gender-inequality-sustainablity-reason-container h2{
+  font-style: "Cabin";
+  font-weight: 100;
+}
+#main-cause-section{
+  padding: 0px 30px 10px 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+#main-cause-section div{
+  width: 350px;
+  height: 150px;
+  background: radial-gradient(white, var(--fact-box-color));
+  box-shadow: -3px -3px 5px 1px var(--cause-box-shadow);
+  border: 2px solid rgb(114, 114, 114);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.gender-logo{
+  width: 30px;
+  height: 30px;
+}
+#main-cause-section div p{
+  font-family: "roboto";
+}
+/*--------------- media queries --------------*/
+@media screen and (max-width:760px){
+  #survey{
+    padding: 10px;
+    justify-content: center;
+  }
+  #gender-inequality-sustainablity-reason-container{
+  flex-direction: column;
+  row-gap: 30px;
+  }
+  #main-cause-section{
+  padding: 10px;
+  justify-content: center;
+  row-gap: 50px;
+  }
+  .nav-content-container{
+    display: none;
+  }
+  #toggle-container{
+    display: flex;
+  }
+}

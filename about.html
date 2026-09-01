@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveForHer About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-style.css">
+</head>
+<body>
+
+      <nav class="top-nav">
+    <div class="nav-logo-container">
+      <img src="logo.png" alt="gender-equality-logo" id="logo">
+    </div>
+    <div class="nav-content-container">
+      <ul>
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+    <button id="toggle-container">
+      <div class="cross cross-1 hamburger"></div>
+      <div class="cross-none hamburger"></div>
+      <div class="cross cross-2 hamburger"></div>
+    </button>
+  </nav>
+
+  <!--side nav section-->
+  <section id="side-nav-section">
+    <div id="nav-close-overlay" onclick="navClose()">
+    </div>
+      <nav id="side-nav">
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="navClose()">
+            <div class="close-cross cross-3"></div>
+            <div class="close-cross cross-4"></div>
+          </button>
+        </div>
+        <div class="side-nav-container">
+          <div>
+           <ul class="nav-list">
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+          </ul>
+           </div>
+         <div>
+          <img src="logo.png" alt="SolveForHer logo" onclick="navClose()">
+        </div>
+      </nav>
+  </section> 
+
+    <!--main contents-->
+  <section id="body-grid-container">
+    <!--all the neccessary body contents will go in the
+    main container section -->
+    <section class="main-container grid-item">
+        <main>
+          <div class="heading-description-container">
+            <h1 class="heading">About us</h1>
+            <article class="solveforher-definition">SolveForHer is a community working to end gender inequality and break gender stereotypes, to make girls and boys equal and make the Earth a stronger place for women to live.</article>
+          </div>
+ 
+
+        <div class="belief-parent">
+          <div class="solveforher-belief-container">
+            <div>
+              <img src="women-empowerment.svg" alt="women-empowerment" class="women-empowerment">
+            </div>
+            <div>
+              <article class="solveforher-belief">
+                We believe every individual deserves respect, equal opportunities, and freedom from discrimination. Through awareness, discussions, and small actions, we try to challenge harmful stereotypes. Our goal is to create a world where everyone feels safe, valued, and equal, no matter their gender.
+              </article>
+            </div>
+          </div>
+          <div class="solveforher-belief-container">
+            <div>
+              <img src="women-empowerment.svg" alt="women-empowerment" class="women-empowerment">
+            </div>
+            <div>
+              <article class="solveforher-belief">
+                We believe true equality begins when we challenge stereotypes and treat everyone with fairness and kindness regardless of gender.
+              </article>
+            </div>
+          </div>
+          <div class="solveforher-belief-container">
+            <div>
+              <img src="women-empowerment.svg" alt="women-empowerment" class="women-empowerment">
+            </div>
+            <div>
+              <article class="solveforher-belief">
+                We believe a better future is built when girls and boys are given the same respect and the same opportunities to learn, grow, and succeed.
+              </article>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="join-us-container">
+              <article>Join us to save the future. It is your issue too.</article>
+              <button class="join-us-btn">Join us</button>
+          </div>
+       </main>
+      </section>
+
+      <section class="side-bar-image-section grid-item">
+        <img src="image4.png" alt="">
+      </section>
+    </section>
+  <script src="main.js" defer></script>
+  <script src="about.js" defer></script>
+</body>
+</html>

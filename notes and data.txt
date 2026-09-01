@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SolveForHer is a campaign to end gender inequality in the world and empower women and girls, showing that women and girls are equal to boys.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <title>SolveForHer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--nav section (top on the website)-->
+  <nav class="top-nav">
+    <div class="nav-logo-container">
+      <img src="assets/images/logo.png" alt="gender-equality-logo" id="logo">
+    </div>
+    <div class="nav-content-container">
+      <ul>
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+    <button id="toggle-container">
+      <div class="cross cross-1 hamburger"></div>
+      <div class="cross-none hamburger"></div>
+      <div class="cross cross-2 hamburger"></div>
+    </button>
+  </nav>
+
+  <!--side nav section-->
+  <section id="side-nav-section">
+    <div id="nav-close-overlay" onclick="navClose()">
+    </div>
+      <nav id="side-nav">
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="navClose()">
+            <div class="close-cross cross-3"></div>
+            <div class="close-cross cross-4"></div>
+          </button>
+        </div>
+        <div class="side-nav-container">
+          <div>
+           <ul class="nav-list">
+            <li onclick="navClose()"><a href="index.html">Home</a></li>
+            <li onclick="navClose()"><a href="about.html">About</a></li>
+            <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+            <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+          </ul>
+           </div>
+         <div>
+          <img src="assets/images/logo.png" alt="SolveForHer logo" onclick="navClose()">
+        </div>
+      </nav>
+  </section>
+
+  <!--header section-->
+  <header id="main-header">
+    <div class="header-quote-container">
+      <div class="header-quote-wrap">
+        <h2>Time's up for harassment against women</h2>
+        <h2>It is time for gender equality</h2>
+      </div>
+    </div>
+  </header>
+
+  <!--main section-->
+  <section id="survey">
+    <div>
+        <img src="assets/svg/sad-woman-icon.svg" alt="women-sad-face">
+      <h2>1 in 3</h2>
+      <p>Women experienced physical and/or sexual violence worldwide</p>
+    </div>
+      <div>
+        <img src="assets/svg/women-empowerment.svg" alt="women-sad-face">
+      <h2>710 million</h2>
+      <p>Women are kept out of labor market because of their family care duties</p>
+    </div>
+      <div>
+        <img src="assets/svg/women-in-work.svg" alt="women-sad-face">
+      <h2>1 in 5</h2>
+      <p>Women aged 20-25 were married as children</p>
+    </div> 
+  </section>
+  <hr>
+
+  <div id="gender-inequality-sustainablity-reason-container">
+    <img src="assets/images/image2.jpg" alt="girl-sad-face" id="sad-face">
+    <h2>Many girls still fear expressing their feelings because of what others think. They often cannot speak up when someone harasses them because they fear society's judgment. These fears can prevent women from reaching their full potential.</h2>
+  </div>
+  
+  <section id="main-cause-section">
+    <div>
+        <img src="assets/svg/Gender-Equality-Icon.svg" alt="" class="gender-logo">
+      <p>
+        Culture plays a major role in gender inequality.
+      </p>
+    </div>
+    <div>
+        <img src="assets/svg/Gender-Equality-Icon.svg" alt="" class="gender-logo">
+      <p>
+        Our beliefs are one of the factors that foster gender inequality.
+      </p>
+    </div>
+    <div>
+        <img src="assets/svg/Gender-Equality-Icon.svg" alt="" class="gender-logo">
+      <p>
+        Creating the idea that boys and girls are different in a child's mind is where gender inequality starts.
+      </p>
+    </div>
+  </section>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root{
+  --body-background: blue;
+  --fact-box-color: rgb(136, 162, 202);
+  --cause-box-shadow: #bcecff;
+  --top-nav-color: #A084CA;
+  --ROSE-PINK: #F2B8D1;
+}
+
+body{
+  background: radial-gradient(white, rgb(224, 224, 255));
+  width: 100%; 
+  height: 100%;
+}
+/*Nav contents style*/
+.top-nav{
+  background-color: var(--top-nav-color);
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  list-style: none;
+  padding: 10px;
+}
+nav ul li a{
+  padding: 4px;
+}
+.nav-content-container ul{
+  text-align: center;
+  display: flex;
+  gap: 40px; 
+}
+.nav-content-container ul li{
+  color: white;
+}
+nav ul li a:hover{
+  transition: 400ms;
+  background-color: black;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.nav-content-container ul li a{
+  color: white;
+  text-decoration: none;
+}
+.side-nav-container ul li a{
+  color: black;
+  text-decoration: none;
+}
+#logo{
+  padding-top: 18px;
+  width: 150px;
+  height: 120px;
+}
+#toggle-container{
+  cursor: pointer;
+  width: 20px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger{
+  top: 40%;
+  left: 0;
+  transition: 400ms;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black;
+}
+#hamburger-1{
+  position: absolute;
+  rotate: 45deg;
+}
+#hamburger-2{
+  opacity: 0;
+  transition: 400ms;
+
+}
+#hamburger-3{
+  position: absolute;
+  rotate: -45deg;
+}
+#side-nav-section{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 400ms;
+  pointer-events: none;
+}
+#nav-close-overlay{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+#side-nav{
+  position: absolute;
+  top: -0%;
+  left: -100%;
+  z-index: 6;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  transition: 400ms;
+}
+.close-btn-container{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-left: 10px;
+}
+.close-btn{
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.close-cross{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background-color: black;
+  width: 20px;
+  height: 3px;
+}
+.cross-3{
+  rotate: 45deg;
+}
+.cross-4{
+  rotate: -45deg;
+}
+.side-nav-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  list-style: none;
+  text-align: center;
+}
+.side-nav-container div img{
+  width: 250px;
+  height: 200px;
+}
+/*Nav styles end here*/
+
+#main-header{
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/images/image1.png);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.header-quote-container{
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.450);
+  z-index: 1;
+}
+.header-quote-wrap{
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  left: 5%;
+  font-size: 2.3vmax;
+}
+.header-quote-wrap h2{
+  color: white;
+  font-family: "Edu Au VIC WA NT Pre";
+  font-weight: 200;
+}
+#survey{
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+#survey div{
+  padding: 15px;
+  width: 250px;
+  height: 250px;
+  border: 2px rgb(59, 59, 59) solid;
+  border-radius: 50%;
+  background: radial-gradient(white, var(--fact-box-color));
+  box-shadow: 3px 3px 4px 2px rgb(0, 0, 119);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  row-gap: 4px;
+  align-items: center;
+  transition: 250ms;
+}
+#survey div:hover{
+  transform: scale(1.1);
+}
+#survey div img{
+  width: 30px;
+  height: 30px;
+}
+#survey div h2{
+  color: rgb(47, 0, 255);
+}
+#gender-inequality-sustainablity-reason-container{
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 65px;
+}
+#sad-face{
+  width: auto;
+  height: 250px;
+  border: 2px black solid;
+  box-shadow: 0px 0px 4px 1px;
+  border-radius: 20px 0px 20px 0px;
+}
+#gender-inequality-sustainablity-reason-container h2{
+  font-style: "Cabin";
+  font-weight: 100;
+}
+#main-cause-section{
+  padding: 0px 30px 10px 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+#main-cause-section div{
+  width: 350px;
+  height: 150px;
+  background: radial-gradient(white, var(--fact-box-color));
+  box-shadow: -3px -3px 5px 1px var(--cause-box-shadow);
+  border: 2px solid rgb(114, 114, 114);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.gender-logo{
+  width: 30px;
+  height: 30px;
+}
+#main-cause-section div p{
+  font-family: "roboto";
+}
+/*--------------- media queries --------------*/
+@media screen and (max-width:760px){
+  #survey{
+    padding: 10px;
+    justify-content: center;
+  }
+  #gender-inequality-sustainablity-reason-container{
+  flex-direction: column;
+  row-gap: 30px;
+  }
+  #main-cause-section{
+  padding: 10px;
+  justify-content: center;
+  row-gap: 50px;
+  }
+  .nav-content-container{
+    display: none;
+  }
+  #toggle-container{
+    display: flex;
+  }
+}
+
+
+const toggleContainer = document.getElementById('toggle-container');
+const hamburger1 = document.querySelector('.cross-1');
+const hamburger2 = document.querySelector('.cross-none');
+const hamburger3 = document.querySelector('.cross-2');
+const sideNavBackground = document.getElementById('side-nav-section');
+const navCloseOverlay = document.getElementById('nav-close-overlay');
+const sideNav = document.getElementById('side-nav');
+const navCloseBtn = document.querySelector('.close-btn');
+
+toggleContainer.addEventListener('click', function(){
+  hamburger1.id = (hamburger1.id === 'hamburger-1') ? '' : 'hamburger-1';
+  hamburger2.id = (hamburger2.id === 'hamburger-2') ? '' : 'hamburger-2';
+  hamburger3.id = (hamburger3.id === 'hamburger-3') ? '' : 'hamburger-3';
+  navCloseOverlay.style.pointerEvents = 'all'
+  sideNavBackground.style.opacity = '1'
+  sideNavBackground.style.pointerEvents = "all"
+  sideNav.style.left = '0%'
+})
+
+function navClose(){
+  hamburger1.id = (hamburger1.id === 'hamburger-1') ? '' : 'hamburger-1';
+  hamburger2.id = (hamburger2.id === 'hamburger-2') ? '' : 'hamburger-2';
+  hamburger3.id = (hamburger3.id === 'hamburger-3') ? '' : 'hamburger-3';
+  sideNavBackground.style.opacity = '0'
+  sideNavBackground.style.pointerEvents = "none"
+  sideNav.style.left = '-100%'
+  navCloseOverlay.style.pointerEvents = 'none'
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveForHer About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about-style.css">
+</head>
+<body>
+
+      <nav class="top-nav">
+    <div class="nav-logo-container">
+      <img src="assets/images/logo.png" alt="gender-equality-logo" id="logo">
+    </div>
+    <div class="nav-content-container">
+      <ul>
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+    <button id="toggle-container">
+      <div class="cross cross-1 hamburger"></div>
+      <div class="cross-none hamburger"></div>
+      <div class="cross cross-2 hamburger"></div>
+    </button>
+  </nav>
+
+  <!--side nav section-->
+  <section id="side-nav-section">
+    <div id="nav-close-overlay" onclick="navClose()">
+    </div>
+      <nav id="side-nav">
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="navClose()">
+            <div class="close-cross cross-3"></div>
+            <div class="close-cross cross-4"></div>
+          </button>
+        </div>
+        <div class="side-nav-container">
+          <div>
+           <ul class="nav-list">
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+          </ul>
+           </div>
+         <div>
+          <img src="assets/images/logo.png" alt="SolveForHer logo" onclick="navClose()">
+        </div>
+      </nav>
+  </section> 
+
+    <!--main contents-->
+  <section id="body-grid-container">
+    <!--all the neccessary body contents will go in the
+    main container section -->
+    <section class="main-container grid-item">
+        <main>
+          <div class="heading-description-container">
+            <h1 class="heading">About us</h1>
+            <article class="solveforher-definition">SolveForHer is a community working to end gender inequality and break gender stereotypes, to make girls and boys equal and make the Earth a stronger place for women to live.</article>
+          </div>
+ 
+
+        <div class="belief-parent">
+          <div class="solveforher-belief-container">
+            <div>
+              <img src="assets/svg/women-empowerment.svg" alt="women-empowerment" class="women-empowerment">
+            </div>
+            <div>
+              <article class="solveforher-belief">
+                We believe every individual deserves respect, equal opportunities, and freedom from discrimination. Through awareness, discussions, and small actions, we try to challenge harmful stereotypes. Our goal is to create a world where everyone feels safe, valued, and equal, no matter their gender.
+              </article>
+            </div>
+          </div>
+          <div class="solveforher-belief-container">
+            <div>
+              <img src="assets/svg/women-empowerment.svg" alt="women-empowerment" class="women-empowerment">
+            </div>
+            <div>
+              <article class="solveforher-belief">
+                We believe true equality begins when we challenge stereotypes and treat everyone with fairness and kindness regardless of gender.
+              </article>
+            </div>
+          </div>
+          <div class="solveforher-belief-container">
+            <div>
+              <img src="assets/svg/women-empowerment.svg" alt="women-empowerment" class="women-empowerment">
+            </div>
+            <div>
+              <article class="solveforher-belief">
+                We believe a better future is built when girls and boys are given the same respect and the same opportunities to learn, grow, and succeed.
+              </article>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="join-us-container">
+              <article>Join us to save the future. It is your issue too.</article>
+              <button class="join-us-btn">Join us</button>
+          </div>
+       </main>
+      </section>
+
+      <section class="side-bar-image-section grid-item">
+        <img src="assets/images/image4.png" alt="">
+      </section>
+    </section>
+  <script src="js/main.js" defer></script>
+  <script src="js/about.js" defer></script>
+</body>
+</html>
+
+
+#body-grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr minmax(300px, 1fr);
+}
+.grid-item{
+    align-items: start;
+}
+.side-bar-image-section{
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    
+}
+.side-bar-image-section img{
+    object-fit: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+
+}
+.heading-description-container{
+    text-align: center;
+    padding: 15px;
+}
+.heading{
+    font-size: 2.5vmax;
+}
+.solveforher-definition{
+    font-size: 2.2vmax;
+    font-weight: 300;
+}
+.solveforher-belief-container{
+    transition: 300ms;
+    background-color: rgba(220, 220, 255, 0.521);
+}
+.solveforher-belief-container:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 1px blue;
+}
+.women-empowerment{
+    width: 50px;
+    height: 50px;
+}
+.belief-parent{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+.solveforher-belief{
+    font-size: 1.5vmax;
+}
+.join-us-container{
+    padding: 10px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0px 0px 0px 0px;
+    font-size: 3vmax;
+    column-gap: 30px;
+}
+.join-us-btn{
+    width: 30%;
+    height: 50px;
+    background-color: blue;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------- making the website to reponsiveful ----------*/
+
+@media screen and (max-width:760px){
+    #body-grid-container{
+        display: block;
+    }
+    .side-bar-image-section{
+        display: none;
+    }
+    .join-us-container{
+        flex-direction: column;
+    }
+}
+
+
+const facebookBtn = document.querySelector('.join-us-btn');
+facebookBtn.addEventListener('click', function(){
+  document.location = 'https://www.facebook.com/profile.php?id=61589241174484'
+})
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolveForHer Mission</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mission-style.css">
+</head>
+<body>
+   <nav class="top-nav">
+    <div class="nav-logo-container">
+      <img src="assets/images/logo.png" alt="gender-equality-logo" id="logo">
+    </div>
+    <div class="nav-content-container">
+      <ul>
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+    <button id="toggle-container">
+      <div class="cross cross-1 hamburger"></div>
+      <div class="cross-none hamburger"></div>
+      <div class="cross cross-2 hamburger"></div>
+    </button>
+  </nav>
+
+  <!--side nav section-->
+  <section id="side-nav-section">
+    <div id="nav-close-overlay" onclick="navClose()">
+    </div>
+      <nav id="side-nav">
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="navClose()">
+            <div class="close-cross cross-3"></div>
+            <div class="close-cross cross-4"></div>
+          </button>
+        </div>
+        <div class="side-nav-container">
+          <div>
+           <ul class="nav-list">
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+          </ul>
+           </div>
+         <div>
+          <img src="assets/images/logo.png" alt="SolveForHer logo" onclick="navClose()">
+        </div>
+      </nav>
+  </section> 
+
+  <header class="mission-header">
+    <div>
+      <h1>Our</h1>
+      <h1>Mission</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="mission-container">
+      <div>
+        <h2>In Girls' Lives:</h2>
+        <article>We are committed to empowering girls by promoting equal opportunities, raising awareness of their rights, and encouraging a future where every girl can live with confidence, safety, and dignity.</article>
+      </div>
+      <div>
+        <h2>For Boys:</h2>
+        <article>We encourage boys to become allies by promoting respect, empathy, and responsibility, inspiring them to stand against discrimination and support gender equality in everyday life.</article>
+      </div>
+      <div>
+        <h2>Standing for Equality:</h2>
+        <article>We work to build a society where equality is a shared responsibility, bringing people together to challenge stereotypes, promote fairness, and create opportunities for everyone, regardless of gender.</article>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="js/main.js" defer></script>
+</html>
+
+
+.mission-header{
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-image: url(../assets/images/image9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.mission-header div{
+  font-size: 3vmax;
+  position: absolute;
+  right: 10%;
+  top: 35%;
+  color: rgba(0, 0, 0, 0.76);
+}
+.mission-container{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.mission-container div article{
+  font-size: 2vmax;
+}
+
+/*---------- media query -----------*/
+@media screen and (max-width:760px){
+  .mission-container{
+    row-gap: 70px;
+  }
+  .mission-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mission-container div article{
+    font-size: 1rem;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width:460px) {
+    .mission-header{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mission-header div{
+    position: static;
+    
+  }
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolveForHer Owner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owner-style.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-logo-container">
+      <img src="assets/images/logo.png" alt="gender-equality-logo" id="logo">
+    </div>
+    <div class="nav-content-container">
+      <ul>
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+    <button id="toggle-container">
+      <div class="cross cross-1 hamburger"></div>
+      <div class="cross-none hamburger"></div>
+      <div class="cross cross-2 hamburger"></div>
+    </button>
+  </nav>
+
+  <!--side nav section-->
+  <section id="side-nav-section">
+    <div id="nav-close-overlay" onclick="navClose()">
+    </div>
+      <nav id="side-nav">
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="navClose()">
+            <div class="close-cross cross-3"></div>
+            <div class="close-cross cross-4"></div>
+          </button>
+        </div>
+        <div class="side-nav-container">
+          <div>
+           <ul class="nav-list">
+        <li onclick="navClose()"><a href="index.html">Home</a></li>
+        <li onclick="navClose()"><a href="about.html">About</a></li>
+        <li onclick="navClose()"><a href="mission.html">Mission</a></li>
+        <li onclick="navClose()"><a href="owner.html">Owner</a></li>
+          </ul>
+           </div>
+         <div>Sanjeevan is the main person who is running SolveForHer.
+          <img src="assets/images/logo.png" alt="SolveForHer logo" onclick="navClose()">
+        </div>
+      </nav>
+  </section> 
+
+  <header>
+    <h1>Who is running SolveForHer?</h1>
+    <p>SolveForHer is an independent platform created and solely operated by a 15-year-old boy named <strong>Sanjeevan</strong>. Driven by his passion for gender equality and his desire to push his personal limits, he manages every single aspect of this platform on his own. From technical development to crafting content, he leads this project independently to build a space dedicated to equal rights and continuous growth.</p>
+  </header>
+
+  <main>
+    <section class="sanjeevan-introduction-section">
+      <div class="sanjeevan-introduction-container">
+        <div>
+          <div>
+            <h1>About Me:</h1>
+          </div>
+          <div>
+            <p class="intro para">
+                Hi, I’m Sanjeevan. I'm a 15-year-old student developer learning to code on my own, with the goal of becoming a software engineer.
+Alongside coding, I’m passionate about standing up for gender equality—something inspired by personal experiences from my past. To help drive real change, I recently started a Facebook page called SolveForHer, where I post almost daily about practical ways we can solve gender inequality.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/images/sanjeevan.jpg" alt="sanjeevan image"  class="sanjeevan-img">
+          <h2>Sanjeevan</h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h1>Behind the Passion</h1>
+        <p class="passion-quote para">Everyone has a role model—whether it's an actor, an author, or even a fictional character. My role model is Emma Watson, who served as a UN Women Goodwill Ambassador. Her activism has definitely helped me grow as a person. Above all, I want to emphasize that our past does not define who we are, but our present choices do.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h1>Terms & Policy</h1>
+      <p>This website does not collect any data or user information. It is a completely static website built to create awareness among the public. As a non-profit organization, we promise that we will never collect any personal information from our users.</p>
+    </section>
+    <section>
+      <h1>Dev & Creations</h1>
+      <p>This website was completely built by Sanjeevan, a student developer. All rights belong to him. Permission to use the information and data on this site is granted to everyone.</p>
+    </section>
+  </footer>
+<script src="js/main.js" defer></script>
+<script src="js/owner.js"></script>
+</body>
+</html>
+
+
+header{
+  text-align: center;
+}
+header p{
+  font-size: 1.5rem;
+}
+main section{
+  padding: 40px 0px 40px 0px;
+}
+.para{
+  font-size: 24px;
+}
+.sanjeevan-img{
+  width: 250px; 
+  height: 320px;
+  border-radius: 10px;
+}
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+footer section{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+ @media screen and (max-width:760px) {
+  header p{
+    font-size: 1.3rem;
+  }
+  .para{
+    font-size: 18px;
+  }
+  .sanjeevan-introduction-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  }
+  .sanjeevan-introduction-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer section{
+    width: 60%;
+  }
+ }
